@@ -1,6 +1,15 @@
 new Vue({
     el: '#app',
     data: {
-      message: 'Hello Vue.js2'
+      firstname: '',
+      lastname: ''
+    },
+
+    methods: {
+        find: function(){
+            this.firstname.length
+        }
     }
+    
+    
   })

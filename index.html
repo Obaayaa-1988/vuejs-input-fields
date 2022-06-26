@@ -6,16 +6,32 @@
     <title>Vue form Validation</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel='stylesheet' type='text/css' media='screen' href='tail.css'> 
     
 </head>
 <body>
+    <div class="bg-blue" >
     <div id="app">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-80">        
+        <input type="text" v-model="firstname" placeholder="enter your first name" class="border border-black-500 rounded" />
+        <br>
+        <input type="text" v-model="lastname" placeholder="enter your last name" class="border border-black-500 rounded" />
+
+        <p> My firstname is: {{ firstname}}</p>
+        <p> The length of my name is: {{ firstname.length}}</p>
+
+        <p> My lastname is: {{ lastname }}</p>
+        <p> The length of my name is: {{ lastname.length}}</p>
+            
+        </div>
 
     </div>
 
+    </div>
 
+    
 
    
 
